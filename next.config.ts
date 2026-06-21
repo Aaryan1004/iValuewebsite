@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   output: 'export',
+  basePath: '/iValuewebsite',
+  trailingSlash: true,
   webpack: (config, {dev}) => {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
     // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
